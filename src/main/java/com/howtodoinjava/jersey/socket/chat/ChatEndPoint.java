@@ -98,10 +98,30 @@ public class ChatEndPoint {
     }
 
     @OnClose
-    public void onClose(Session session) throws IOException {
+    public void onClose(Session session) throws IOException, EncodeException {
         logger.info("Finalizando socket da sessão "+Integer.parseInt(session.getId(),16));
+        Map.Entry<Session, Session> currentAssociation = this.getCurrentAssociation(playersAssociation,session);
+        if (currentAssociation!=null) {
+            if (!currentAssociation.getKey().equals(currentAssociation.getValue())) {
+                 if (session.equals(currentAssociation.getKey())) {
+                    logger.info("Player 1 perdeu a conexão");
+                    message.setTypeMessage("systemMessagePlayerLostConnection");
+                    message.setUserName("Sistema");
+                    message.setMessage("O player 1 perdeu a conexão. Você venceu. Parabéns!!");
+                    currentAssociation.getValue().getBasicRemote().sendObject(message);
+                } else if (session.equals(currentAssociation.getValue())) {
+                     logger.info("Player 2 perdeu a conexão");
+                     message.setTypeMessage("systemMessagePlayerLostConnection");
+                     message.setUserName("Sistema");
+                     message.setMessage("O player 2 perdeu a conexão. Você venceu. Parabéns!!");
+                    currentAssociation.getKey().getBasicRemote().sendObject(message);
+                }
+                playersAssociation.remove(currentAssociation.getKey());
+                playersAssociation.remove(currentAssociation.getValue());
+            }
+
+        }
         sessionsById.remove(session);
-        playersAssociation.remove(session);
     }
 
 

@@ -6,7 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a384fb38-a569-4a42-9e30-422d1010fd62" name="Default Changelist" comment="" />
+    <list default="true" id="a384fb38-a569-4a42-9e30-422d1010fd62" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/howtodoinjava/jersey/socket/chat/ChatEndPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/howtodoinjava/jersey/socket/chat/ChatEndPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JerseyDemos.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/JerseyDemos.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/JerseyDemos/WEB-INF/classes/com/howtodoinjava/jersey/socket/chat/ChatEndPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/JerseyDemos/WEB-INF/classes/com/howtodoinjava/jersey/socket/chat/ChatEndPoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/howtodoinjava/jersey/socket/chat/ChatEndPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/howtodoinjava/jersey/socket/chat/ChatEndPoint.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +26,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -35,7 +45,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1XUQl3DCSvf1PD1RyZuspEWc1FE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/howtodoinjava/jersey/socket/play" />
@@ -146,11 +158,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581098340154</updated>
-      <workItem from="1581098344666" duration="50408000" />
+      <workItem from="1581098344666" duration="54260000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
